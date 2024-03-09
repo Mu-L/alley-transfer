@@ -16,12 +16,12 @@
 
 - 体积小
 
-  | 平台及格式                              | 体积（v0.1.0-beta.4） |
-  | --------------------------------------- | --------------------- |
-  | macOS aarch64 - dmg                     | 4.98 MB               |
-  | Linux(Debian/Ubuntu/Deepin) amd64 - deb | 7.17 MB               |
-  | Windows amd64 - msi                     | 4.71 MB               |
-  | Windows amd64 - exe                     | 3.88 MB               |
+  | 平台及格式                              | 体积（v0.1.1） |
+  | --------------------------------------- | -------------- |
+  | macOS aarch64 - dmg                     | 2.64 MB        |
+  | Linux(Debian/Ubuntu/Deepin) amd64 - deb | 2.86 MB        |
+  | Windows amd64 - msi                     | 2.79 MB        |
+  | Windows amd64 - exe                     | 2.68 MB        |
 
 ## 使用
 
@@ -70,3 +70,9 @@ sudo xattr -r -d com.apple.quarantine /Applications/Alley.app
 ```
 
 关闭终端后就可以正常打开程序了。
+
+### 缓存清理
+
+前端页面使用系统 WebView 渲染，缓存文件同样也由系统 WebView 创建。
+
+当缓存占据磁盘空间较大时，可以通过一些垃圾清理工具删除或手动删除缓存目录，不会影响程序的运行。
