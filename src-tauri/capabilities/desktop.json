@@ -1,7 +1,6 @@
 {
-  "identifier": "migrated",
-  "description": "permissions that were migrated from v1",
-  "local": true,
+  "identifier": "desktop-capability",
+  "platforms": ["linux", "macOS", "windows"],
   "windows": ["main"],
   "permissions": [
     "path:default",
@@ -14,6 +13,7 @@
     "shell:default",
     "clipboard-manager:allow-write-text",
     "shell:allow-open",
-    "dialog:allow-open"
+    "dialog:allow-open",
+    "os:allow-platform"
   ]
 }
